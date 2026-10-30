@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scope</title>
+</head>
+<body>
+    <button onclick="myfunction()">Click me!</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        var a = 10;
+        function myfunction(){
+            var b=3;
+            document.getElementById("demo").innerHTML="The product of a and b is "+(a*b);
+            
+        }
+        document.getElementById("demo1").innerHTML = "The product of a and b is " + (b);
+    </script>
+    
+</body>
+</html>
