@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+</head>
+<body
+    <h2>Calculator</h2>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <button onclick="multi()">Multiply</button>
+    <p id="mul_result"></p>
+    <script>
+        function multi(x, y) {
+            x = Number(document.getElementById("num1").value);
+            y = Number(document.getElementById("num2").value);
+
+            document.getElementById("mul_result").innerHTML = x * y;
+        }
+    </script>
+    <button onclick="add()">Addition</button>
+    <p id="add_result"></p>
+    <script>
+        function add(x, y) {
+            x = Number(document.getElementById("num1").value);
+            y = Number(document.getElementById("num2").value);
+
+            document.getElementById("add_result").innerHTML = x+y;
+        }
+    </script>
+    <button onclick="sub()">Subtraction</button>
+    <p id="sub_result"></p>
+    <script>
+        function sub(x, y) {
+            x = Number(document.getElementById("num1").value);
+            y = Number(document.getElementById("num2").value);
+
+            document.getElementById("sub_result").innerHTML = x - y;
+        }
+    </script>
+    <button onclick="div()">Division</button>
+    <p id="div_result"></p>
+    <script>
+        function div(x, y) {
+            x = Number(document.getElementById("num1").value);
+            y = Number(document.getElementById("num2").value);
+
+            document.getElementById("div_result").innerHTML = x / y;
+        }
+    </script>
+</body>
+</html>
